@@ -1,0 +1,19 @@
+{
+  "app_title": "Flutter Internationalization",
+
+  "home_counter_title": "You have pushed the button this many times:",
+  "home_fab_tooltip": "Increment",
+
+  "second_leading": "some random text to visualize",
+  "second_center_text": "hello, {name}, let's see the language changing",
+  "second_01_left": "Left side component",
+  "second_02_right": "Right side component",
+
+  "third_01": "first screen of third module",
+  "third_01_goTo_second": "To second",
+  "third_02": "second screen of third module",
+  "third_02_goTo_first": "To first",
+  "third_02_goTo_third": "To third",
+  "third_03": "third screen of third module",
+  "third_03_goTo_second": "To second"
+}

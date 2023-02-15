@@ -18,10 +18,7 @@ class Third01Page extends StatelessWidget {
             Text(S.of(context).third_01),
             const SizedBox(height: 30),
             ElevatedButton(
-              onPressed: () {
-                // Navigator.of(context).pushNamed('/third/router_02');
-                Modular.to.navigate('/third/router_02');
-              },
+              onPressed: () => Modular.to.navigate('/third/router_02'),
               child: Text(S.of(context).third_01_goTo_second),
             )
           ],

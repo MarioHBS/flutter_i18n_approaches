@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_i18n/flutter_i18n.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 import '../language/l10n.dart';
@@ -19,11 +20,13 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void updateToEN() async {
-    await S.load(const Locale('en'));
+    // await S.load(const Locale('en'));
+    await FlutterI18n.refresh(context, const Locale('en'));
     setState(() { });
   }
   void updateToPT() async {
-    await S.load(const Locale('pt'));
+    // await S.load(const Locale('pt'));
+    await FlutterI18n.refresh(context, const Locale('pt'));
     setState(() { });
   }
 
@@ -31,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(S.of(context).app_title),
+        title: I18nText('app_title'),//Text(S.of(context).app_title),
         actions: [
 
           TextButton(
@@ -47,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(S.of(context).home_counter_title,),
+            I18nText('home_counter_title', child: const Text("")),//Text(S.of(context).home_counter_title,),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
@@ -62,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
-        tooltip: S.of(context).home_fab_tooltip,
+        tooltip: FlutterI18n.translate(context, "home_fab_tooltip"),//S.of(context).home_fab_tooltip,
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );

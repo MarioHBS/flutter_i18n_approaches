@@ -5,7 +5,10 @@ import 'app_module.dart';
 import 'language/l10n.dart';
 import 'language/extension_l10n.dart';
 
-void main() => runApp(ModularApp(module: AppModule(), child: const MyApp()));
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(ModularApp(module: AppModule(), child: const MyApp()));
+}
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
@@ -30,8 +33,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       localizationsDelegates: getAllDelegates,
-      supportedLocales: S.delegate.supportedLocales,
-      locale: _locale,
+      // supportedLocales: S.delegate.supportedLocales,
+      // locale: _locale,
       title: 'Flutter Demo',
       theme: ThemeData(
         primaryColor: Colors.green,
