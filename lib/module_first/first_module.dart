@@ -2,7 +2,6 @@ import 'package:flutter_modular/flutter_modular.dart';
 
 import '../language/l10n.dart';
 import 'home_page.dart';
-import '../module_second/second_02_page.dart';
 
 class FirstModule extends Module {
   @override
