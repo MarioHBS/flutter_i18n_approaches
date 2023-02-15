@@ -1,0 +1,20 @@
+{
+  "@@locale": "pt",
+  "app_title": "Flutter Internacionalização",
+
+  "home_counter_title": "Você pressionou o botão nesta quantidade:",
+  "home_fab_tooltip": "Adicione",
+
+  "second_leading": "um texto qualquer para olhar",
+  "second_center_text": "olá, {name}, vamos ver o idioma mudando",
+  "second_01_left": "Componente esquerdo",
+  "second_02_right": "Componente direito",
+
+  "third_01": "primeira tela do terceiro módulo",
+  "third_01_goTo_second": "para a segunda",
+  "third_02": "segunda tela do terceiro módulo",
+  "third_02_goTo_first": "para a primeira",
+  "third_02_goTo_third": "para a terceira",
+  "third_03": "terceira tela do terceiro módulo",
+  "third_03_goTo_second": "para a segunda"
+}
